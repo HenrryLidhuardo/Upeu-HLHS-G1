@@ -1,5 +1,7 @@
 package ESREPETITIVAS;
 
+import java.util.Scanner;
+
 /**
  * EjerciciosR
  */
@@ -23,10 +25,20 @@ public class EjerciciosR {
             System.out.println(numInit);
         } 
     }
+    public static void nombrevertical() {
+        Scanner lt=new  Scanner(System.in);
+        System.out.println("Ingresa su Nombre");
+        String nombre=lt.next();
+        for (int i = nombre.length()-1; i >=0; i--) {
+            System.out.println(nombre.charAt(i));
+        }
+    }
     
     public static void main(String[] args) {
-        System.out.println("Imprime While:"); ImprimirWhileN1_20();
+        /*System.out.println("Imprime While:"); ImprimirWhileN1_20();
         System.out.println("Imprime Do while:");ImprimirDowhileN1_20();
-        System.out.println("Imprime For:");ImprimirForN1_20();
+        System.out.println("Immprime For:");ImprimirForN1_20();*/
+
+        nombrevertical();
     }
 }
