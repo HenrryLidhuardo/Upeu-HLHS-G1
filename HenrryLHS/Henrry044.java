@@ -2,19 +2,19 @@ package HenrryLHS;
 
 import java.util.Scanner;
 
-public class Henrry04 {
+public class Henrry044 {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int Color, FocoBlanco, FocoRojo, FocoVerde, i;
-        int n;
+        int N;
         FocoBlanco = 0;
         FocoRojo = 0;
         FocoVerde = 0;
         System.out.print("Ingresa el Valor de N: ");
-        n = in.nextInt();
+        N = in.nextInt();
         in.nextLine();
-        for (i=1; i<=n; i++) {
+        for (i=1; i<=N; i++) {
             System.out.print("Proceso " + i);
             System.out.println("Seleccionar el Color.");
             System.out.println("\t1.- Verde");

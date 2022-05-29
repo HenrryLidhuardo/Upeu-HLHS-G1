@@ -2,7 +2,7 @@ package HenrryLHS;
 
 import java.util.Scanner;
 
-public class Henrry02 {
+public class Henrry042 {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
