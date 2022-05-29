@@ -1,8 +1,8 @@
-package HenrryLHS;
+package HenrryLidhuardoHS;
 
 import java.util.Scanner;
 
-public class Henrry0416 {
+public class HenrryLHS0416 {
     public static void main(String[] args) {
  
         Scanner sc = new Scanner(System.in);

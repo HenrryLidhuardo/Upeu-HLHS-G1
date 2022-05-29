@@ -1,6 +1,6 @@
-package HenrryLHS;
+package HenrryLidhuardoHS;
 
-public class Henrry0426 {
+public class HenrryLHS0426 {
     public static void main(String[] args) {
         System.out.print("Introduzca Número: ");
         int IntroducirNum = Integer.parseInt(System.console().readLine());
