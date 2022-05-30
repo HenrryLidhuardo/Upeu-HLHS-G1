@@ -11,21 +11,18 @@ public class HenrryLHS043 {
         CantidadCero = 0;
         MenoraCero = 0;
         MayoraCero = 0;
-        System.out.print("Ingresa el Valor de N: ");
+        System.out.print("Ingresa la Cantidad de Numeros: ");
         n = in.nextInt();
-        in.nextLine();
         for (i=1; i<=n; i++) {
-            System.out.print("Proceso" + i);
-            System.out.print("Ingresa el Valor de la Cantidad: ");
+            System.out.print("Variable " + i);
+            System.out.print(" Ingresa el Valor de la Cantidad: ");
             Cantidad = in.nextDouble();
-            in.nextLine();
             if(Cantidad==0)
                 CantidadCero=CantidadCero+1;
             if(Cantidad<0)
                 MenoraCero=MenoraCero+1;
             if(Cantidad>0)
                 MayoraCero=MayoraCero+1;
-            System.out.println();
         }
         System.out.println("Valor de Cantidad Cero: " + CantidadCero);
         System.out.println("Valor de Menor a Cero: " + MenoraCero);

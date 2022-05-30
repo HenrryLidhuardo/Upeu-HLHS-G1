@@ -6,60 +6,43 @@ public class HenrryLHS048 {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        int i, n;
-        double Cantidad_de_Enero01, Cantidad_de_Febrero02, Cantidad_de_Marzo03, Cantidad_de_Abril04, Cantidad_de_Mayo05; 
-        double Cantidad_de_Junio06, Cantidad_de_Julio07, Cantidad_de_Agosto08, Cantidad_de_Septiembre09, Cantidad_de_Octubre10;
-        double Cantidad_de_Noviembre11, Cantidad_de_Diciembre12, Interes, Inversion_Final, Total;
+        int i, N;
+        double Cantidad_de_Enero, Cantidad_de_Febrero, Cantidad_de_Marzo, Cantidad_de_Abril, Cantidad_de_Mayo, Cantidad_de_Junio, Cantidad_de_Julio, Cantidad_de_Agosto, Cantidad_de_Septiembre, Cantidad_de_Octubre, Cantidad_de_Noviembre, Cantidad_de_Diciembre, Interes, Inversion_Final, Total;
         Total = 0;
-        System.out.print("Ingresa el Valor de N: ");
-        n = in.nextInt();
-        in.nextLine();
-        for (i=1; i<=n; i++) {
-            System.out.print("Proceso " + i);
-            System.out.print("Ingresa el Valor de la Cantidad de Enero01: ");
-            Cantidad_de_Enero01 = in.nextDouble();
-            in.nextLine();
-            System.out.print("Ingresa el Valor de la Cantidad de Febrero02: ");
-            Cantidad_de_Febrero02 = in.nextDouble();
-            in.nextLine();
-            System.out.print("Ingresa el Valor de la Cantidad de Marzo03: ");
-            Cantidad_de_Marzo03 = in.nextDouble();
-            in.nextLine();
-            System.out.print("Ingresa el Valor de la Cantidad de Abril04: ");
-            Cantidad_de_Abril04 = in.nextDouble();
-            in.nextLine();
-            System.out.print("Ingresa el Valor de la Cantidad de Mayo05: ");
-            Cantidad_de_Mayo05 = in.nextDouble();
-            in.nextLine();
-            System.out.print("Ingresa el Valor de la Cantidad de Junio06: ");
-            Cantidad_de_Junio06 = in.nextDouble();
-            in.nextLine();
-            System.out.print("Ingresa el Valor de la Cantidad de Julio07: ");
-            Cantidad_de_Julio07 = in.nextDouble();
-            in.nextLine();
-            System.out.print("Ingresa el Valor de la Cantidad de Agosto08: ");
-            Cantidad_de_Agosto08 = in.nextDouble();
-            in.nextLine();
-            System.out.print("Ingresa el Valor de la Cantidad de Septiembre09: ");
-            Cantidad_de_Septiembre09 = in.nextDouble();
-            in.nextLine();
-            System.out.print("Ingresa el Valor de la Cantidad de Octubre10: ");
-            Cantidad_de_Octubre10 = in.nextDouble();
-            in.nextLine();
-            System.out.print("Ingresa el Valor de la Cantidad de Noviembre11: ");
-            Cantidad_de_Noviembre11 = in.nextDouble();
-            in.nextLine();
-            System.out.print("Ingresa el Valor de la Cantidad de Diciembre12: ");
-            Cantidad_de_Diciembre12 = in.nextDouble();
-            in.nextLine();
+        System.out.print("Ingresa la Cantidad de Años: ");
+        N = in.nextInt();
+        for (i=1; i<=N; i++) {
+            System.out.print("Ingresa la Cantidad de Enero: ");
+            Cantidad_de_Enero = in.nextDouble();
+            System.out.print("Ingresa la Cantidad de Febrero: ");
+            Cantidad_de_Febrero = in.nextDouble();
+            System.out.print("Ingresa la Cantidad de Marzo: ");
+            Cantidad_de_Marzo = in.nextDouble();
+            System.out.print("Ingresa la Cantidad de Abril: ");
+            Cantidad_de_Abril = in.nextDouble();
+            System.out.print("Ingresa la Cantidad de Mayo: ");
+            Cantidad_de_Mayo = in.nextDouble();
+            System.out.print("Ingresa la Cantidad de Junio: ");
+            Cantidad_de_Junio = in.nextDouble();
+            System.out.print("Ingresa la Cantidad de Julio: ");
+            Cantidad_de_Julio = in.nextDouble();
+            System.out.print("Ingresa la Cantidad de Agosto: ");
+            Cantidad_de_Agosto = in.nextDouble();
+            System.out.print("Ingresa la Cantidad de Septiembre: ");
+            Cantidad_de_Septiembre = in.nextDouble();
+            System.out.print("Ingresa la Cantidad de Octubre: ");
+            Cantidad_de_Octubre = in.nextDouble();
+            System.out.print("Ingresa la Cantidad de Noviembre: ");
+            Cantidad_de_Noviembre = in.nextDouble();
+            System.out.print("Ingresa la Cantidad de Diciembre: ");
+            Cantidad_de_Diciembre = in.nextDouble();
+            Total=Cantidad_de_Enero+Cantidad_de_Febrero+Cantidad_de_Marzo+Cantidad_de_Abril+Cantidad_de_Mayo+Cantidad_de_Junio+Cantidad_de_Julio+Cantidad_de_Agosto+Cantidad_de_Septiembre+Cantidad_de_Octubre+Cantidad_de_Noviembre+Cantidad_de_Diciembre;
             Interes=Total*0.1;
-            Total=Total+Interes+Cantidad_de_Enero01+Cantidad_de_Febrero02+Cantidad_de_Marzo03+Cantidad_de_Abril04+Cantidad_de_Mayo05+Cantidad_de_Junio06+Cantidad_de_Julio07+Cantidad_de_Agosto08+Cantidad_de_Septiembre09+Cantidad_de_Octubre10+Cantidad_de_Noviembre11+Cantidad_de_Diciembre12;
-            Inversion_Final=Total;
-            System.out.println("Valor de intereses: " + Interes);
-            System.out.println("Valor de inversion final: " + Inversion_Final);
-            System.out.println();
-        }
-        System.out.println("Valor de total: " + Total);
+            Inversion_Final=Total+Interes;
+            System.out.println("Ahorro del Año es: " + Total);
+            System.out.println("Interes del Año es: " + Interes);
+            System.out.println("Total con Interes es: " + Inversion_Final);
     }
 
+  }
 }

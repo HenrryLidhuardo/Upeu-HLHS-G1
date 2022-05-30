@@ -9,7 +9,7 @@ public class HenrryLHS042 {
         int FormadePago, i, n, TipodeHamburguesa;
         double Cargo, Costo, Pago;
         Pago = 0;
-        System.out.print("Ingresa la Cantidad de N: ");
+        System.out.print("Ingresa la Cantidad de Hamburguesas: ");
         n = in.nextInt();
         in.nextLine();
         for (i=1; i<=n; i++) {
@@ -18,7 +18,6 @@ public class HenrryLHS042 {
             System.out.println("\t1.- S Sencilla");
             System.out.println("\t2.- D Doble");
             System.out.println("\t3.- T Triples");
-            System.out.print("\t: ");
             do {
                 TipodeHamburguesa = in.nextInt();
                 in.nextLine();
@@ -35,7 +34,6 @@ public class HenrryLHS042 {
             System.out.println("Selecciona la Forma de Pago.");
             System.out.println("\t1.- Efectivo");
             System.out.println("\t2.- Tarjeta");
-            System.out.print("\t: ");
             do {
                 FormadePago = in.nextInt();
                 in.nextLine();
@@ -49,7 +47,6 @@ public class HenrryLHS042 {
             Pago=Pago+Costo+Cargo;
             System.out.println("Valor de Cargo: " + Cargo);
             System.out.println("Valor de Costo: " + Costo);
-            System.out.println();
         }
         System.out.println("Valor de Pago: " + Pago);
     }
